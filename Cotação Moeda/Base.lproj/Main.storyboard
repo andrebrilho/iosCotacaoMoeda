@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Catamaran-ExtraLight.ttf">
+            <string>Catamaran-ExtraLight</string>
+            <string>Catamaran-ExtraLight</string>
+            <string>Catamaran-ExtraLight</string>
+            <string>Catamaran-ExtraLight</string>
+        </mutableArray>
+        <mutableArray key="Catamaran-Light.ttf">
+            <string>Catamaran-Light</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cotac_a_o_Moeda" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pLf-6C-zwD" customClass="SegmentedControll" customModule="Cotac_a_o_Moeda" customModuleProvider="target">
+                                <rect key="frame" x="20" y="504" width="280" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo.png" translatesAutoresizingMaskIntoConstraints="NO" id="KgY-Uf-iWe">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="620"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M1m-dW-wjw">
+                                <rect key="frame" x="78" y="94" width="175" height="144"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxY-yD-rfX">
+                                <rect key="frame" x="103" y="345" width="125" height="49"/>
+                                <fontDescription key="fontDescription" name="Catamaran-ExtraLight" family="Catamaran" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="0.98249965520000004" blue="0.99405014179999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTi-WC-uMe">
+                                <rect key="frame" x="214" y="504" width="89" height="44"/>
+                                <fontDescription key="fontDescription" name="Catamaran-Light" family="Catamaran" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.98249965520000004" blue="0.99405014179999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YK-WS-xgR">
+                                <rect key="frame" x="12" y="519" width="128" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="SsT-Yw-zO5"/>
+                                    <constraint firstAttribute="width" constant="128" id="tFs-eq-NZN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Catamaran-ExtraLight" family="Catamaran" pointSize="25"/>
+                                <state key="normal" title="+ Calcular">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCalcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UO3-gT-oFx"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="YY8-kl-aRu">
+                                <rect key="frame" x="142" y="266" width="37" height="37"/>
+                                <color key="color" red="1" green="0.98249965520000004" blue="0.99405014179999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Asz-Td-Iid">
+                                <rect key="frame" x="46" y="30" width="228" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JLE-CU-3wv"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Dolar"/>
+                                    <segment title="Euro"/>
+                                    <segment title="Libra"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.98249965520000004" blue="0.99405014179999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segControllAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="D6C-5Q-zrj"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWV-O5-tWQ" customClass="SegmentedControll" customModule="Cotac_a_o_Moeda" customModuleProvider="target">
+                                <rect key="frame" x="46" y="37" width="228" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="228" id="HNy-Za-9Fh"/>
+                                    <constraint firstAttribute="height" constant="39" id="LY7-lR-iJ9"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="segControll2:" destination="BYZ-38-t0r" eventType="valueChanged" id="dlw-x2-Z5M"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfn-Ow-sKE">
+                                <rect key="frame" x="40" y="478" width="240" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="02w-d9-3D2"/>
+                                    <constraint firstAttribute="height" constant="1" id="7mX-mg-86s"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EURO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYj-yz-JNK">
+                                <rect key="frame" x="111" y="279" width="100" height="66"/>
+                                <fontDescription key="fontDescription" name="Catamaran-ExtraLight" family="Catamaran" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Digite o valor em Reais" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-cx-xD8">
+                                <rect key="frame" x="43" y="436" width="234" height="41"/>
+                                <color key="textColor" red="1" green="0.98249965520000004" blue="0.99405014179999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Catamaran-ExtraLight" family="Catamaran" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="R2o-ux-mbZ"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YY8-kl-aRu" firstAttribute="top" secondItem="M1m-dW-wjw" secondAttribute="bottom" constant="28" id="3N1-15-CrK"/>
+                            <constraint firstAttribute="trailing" secondItem="KgY-Uf-iWe" secondAttribute="trailing" id="3az-ya-Evy"/>
+                            <constraint firstItem="YY8-kl-aRu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4e7-bh-KYs"/>
+                            <constraint firstItem="cWV-O5-tWQ" firstAttribute="leading" secondItem="Asz-Td-Iid" secondAttribute="leading" id="7LZ-ds-BM0"/>
+                            <constraint firstItem="M1m-dW-wjw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5.5" id="BZ5-Mx-0wu"/>
+                            <constraint firstItem="pLf-6C-zwD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="E7T-pp-T1q"/>
+                            <constraint firstItem="M1m-dW-wjw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="62" id="FVb-MA-x2G"/>
+                            <constraint firstItem="M1m-dW-wjw" firstAttribute="top" secondItem="cWV-O5-tWQ" secondAttribute="bottom" constant="18" id="HYP-s4-5yf"/>
+                            <constraint firstItem="nfn-Ow-sKE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ICK-Ob-qHW"/>
+                            <constraint firstItem="JYj-yz-JNK" firstAttribute="centerX" secondItem="YY8-kl-aRu" secondAttribute="centerX" id="JJE-iD-rO9"/>
+                            <constraint firstItem="KgY-Uf-iWe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Jij-1C-TxZ"/>
+                            <constraint firstItem="KQZ-cx-xD8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KcA-iv-rnu"/>
+                            <constraint firstItem="IxY-yD-rfX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5.5" id="LWP-N0-5I7"/>
+                            <constraint firstItem="cWV-O5-tWQ" firstAttribute="centerX" secondItem="YY8-kl-aRu" secondAttribute="centerX" id="Lt6-Hr-Qcw"/>
+                            <constraint firstItem="nfn-Ow-sKE" firstAttribute="top" secondItem="KQZ-cx-xD8" secondAttribute="bottom" constant="1" id="Lud-Fh-c0A"/>
+                            <constraint firstItem="4YK-WS-xgR" firstAttribute="top" secondItem="nfn-Ow-sKE" secondAttribute="bottom" constant="40" id="NTq-T4-l7d"/>
+                            <constraint firstItem="Asz-Td-Iid" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q2s-R2-nYR"/>
+                            <constraint firstItem="cWV-O5-tWQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="Slv-LI-p2F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Asz-Td-Iid" secondAttribute="trailing" constant="30" id="TtJ-VC-wbb"/>
+                            <constraint firstItem="Asz-Td-Iid" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="XwU-c2-mIj"/>
+                            <constraint firstItem="cWV-O5-tWQ" firstAttribute="centerX" secondItem="KgY-Uf-iWe" secondAttribute="centerX" id="erD-2v-Lnk"/>
+                            <constraint firstItem="KgY-Uf-iWe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fgp-sQ-6eb"/>
+                            <constraint firstItem="JYj-yz-JNK" firstAttribute="top" secondItem="M1m-dW-wjw" secondAttribute="bottom" constant="41" id="ioZ-ye-JJW"/>
+                            <constraint firstItem="4YK-WS-xgR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="kc7-XU-IA4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4YK-WS-xgR" secondAttribute="bottom" constant="20" id="kzT-s4-LXN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uTi-WC-uMe" secondAttribute="trailing" constant="-3" id="lTG-zH-hg9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uTi-WC-uMe" secondAttribute="bottom" constant="20" id="loQ-88-hY3"/>
+                            <constraint firstItem="Asz-Td-Iid" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="myn-SL-TZf"/>
+                            <constraint firstItem="IxY-yD-rfX" firstAttribute="top" secondItem="JYj-yz-JNK" secondAttribute="bottom" id="qN5-1G-f7x"/>
+                            <constraint firstItem="YY8-kl-aRu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uuL-Hx-Q0N"/>
+                            <constraint firstAttribute="bottom" secondItem="KgY-Uf-iWe" secondAttribute="bottom" constant="-52" id="vED-Tj-7BO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityLoading" destination="YY8-kl-aRu" id="zTf-ec-RXU"/>
+                        <outlet property="imgLogo" destination="M1m-dW-wjw" id="18a-uB-1N8"/>
+                        <outlet property="lblNomeMoeda" destination="JYj-yz-JNK" id="0fs-Bc-gv7"/>
+                        <outlet property="lblValorCalculado" destination="uTi-WC-uMe" id="hmV-g3-C9k"/>
+                        <outlet property="lblValorDefault" destination="IxY-yD-rfX" id="plN-Yz-Bu2"/>
+                        <outlet property="segControll" destination="Asz-Td-Iid" id="L8C-PP-RjF"/>
+                        <outlet property="segControll2" destination="cWV-O5-tWQ" id="ZzT-s0-4jU"/>
+                        <outlet property="txtvalor" destination="KQZ-cx-xD8" id="GZs-6h-lyg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="293"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fundo.png" width="760" height="1338"/>
+    </resources>
+</document>
